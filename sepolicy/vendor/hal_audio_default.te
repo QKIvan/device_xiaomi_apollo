@@ -21,3 +21,6 @@ binder_call(hal_audio_default, system_suspend_server)
 
 allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
 
+# Dolby
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, hal_dms_default)
