@@ -103,9 +103,12 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
-KERNEL_DEFCONFIG := vendor/apollo_defconfig
-
-KERNEL_LLVM_SUPPORT := true
+TARGET_KERNEL_CLANG_VERSION := r487747c
+TARGET_KERNEL_CONFIG := \
+    vendor/kona-perf_defconfig \
+    vendor/debugfs.config \
+    vendor/xiaomi/sm8250-common.config \
+    vendor/xiaomi/apollo.config
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
