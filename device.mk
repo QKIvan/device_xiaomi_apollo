@@ -316,7 +316,8 @@ PRODUCT_PACKAGES += \
     ApolloSettings \
     ApolloSystemUI \
     AOSPAApolloFrameworks \
-    AOSPAApolloSystemUI
+    AOSPAApolloSystemUI \
+    NetworkStackOverlayCN
 
 # Protobuf
 PRODUCT_PACKAGES += \
