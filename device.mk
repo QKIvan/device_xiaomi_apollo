@@ -294,6 +294,9 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+PRODUCT_PACKAGES += \
+    libchrome.vendor \
+
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.nfc.port=I2C
 
