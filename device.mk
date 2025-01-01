@@ -140,6 +140,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.xiaomi
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.usb.uvc.enabled=true
+
 # Dolby
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.delta.refresh=true \
@@ -326,7 +333,8 @@ PRODUCT_PACKAGES += \
     ApolloSystemUI \
     AOSPAApolloFrameworks \
     AOSPAApolloSystemUI \
-    NetworkStackOverlayCN
+    NetworkStackOverlayCN \
+    ApolloDeviceAsWebcamRes
 
 # Protobuf
 PRODUCT_PACKAGES += \
